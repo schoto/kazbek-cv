@@ -1,5 +1,132 @@
-h1 {
-    text-align: center;
-    font-family: "Source Sans Pro", sans-serif;
-    font-weight: normal;
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header Styles */
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 2rem;
+}
+header img {
+  max-width: 200px; /* Adjust the width as needed */
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%; /* If you want to add a circular border to the image */
+}
+
+header h1 {
+  font-size: 2.5rem;
+}
+
+header h2 {
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+
+/* Section Styles */
+section {
+  padding: 2rem;
+}
+
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Article Styles */
+article {
+  margin-bottom: 2rem;
+}
+
+article h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+article p {
+  margin-bottom: 0;
+}
+
+/* Skills Section Styles */
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 0.5rem;
+}
+
+/* Projects Section Styles */
+ul li a {
+  color: #333;
+  text-decoration: none;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+
+footer h4 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+footer a {
+  color: #fff;
+  margin: 0 0.5rem;
+  font-size: 1.5rem;
+}
+
+/* TryHackMe Badge Styles */
+footer script {
+  display: block;
+  margin: 0 auto;
+  max-width: 200px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+}
+nav a.active {
+  color: #ff7f50; /* Set the color you want for the active navigation item */
+  font-weight: bold;
+}
+
+nav {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 1rem 0;
+}
+#back-to-top-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  background-color: #333;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#back-to-top-btn i {
+  line-height: 40px;
 }
