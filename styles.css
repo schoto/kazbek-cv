@@ -130,3 +130,26 @@ nav {
 #back-to-top-btn i {
   line-height: 40px;
 }
+/* Hover effect for links */
+ul li a {
+  position: relative;
+  display: inline-block;
+  transition: transform 0.3s;
+}
+
+ul li a::after {
+  content: '👉'; /* Add your preferred emoji or custom animation symbol here */
+  display: inline-block;
+  opacity: 0;
+  margin-left: 5px; /* Adjust the spacing between the link and the emoji */
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+ul li a:hover {
+  transform: translateX(5px); /* Adjust the distance the link moves on hover */
+}
+
+ul li a:hover::after {
+  opacity: 1;
+  transform: translateX(-5px); /* Adjust the distance the emoji moves on hover */
+}

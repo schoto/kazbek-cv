@@ -20,3 +20,14 @@ window.addEventListener('scroll', () => {
 document.getElementById('back-to-top-btn').addEventListener('click', () => {
   document.body.scrollIntoView({ behavior: 'smooth', block: 'start' });
 });
+const emoji = document.querySelectorAll('ul li a::after');
+
+emoji.forEach((emojiEl) => {
+  emojiEl.addEventListener('mouseenter', () => {
+    emojiEl.style.animation = 'rotateEmoji 1s linear infinite'; // Adjust the animation properties as needed
+  });
+
+  emojiEl.addEventListener('mouseleave', () => {
+    emojiEl.style.animation = 'none';
+  });
+});
