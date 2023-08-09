@@ -103,7 +103,7 @@ footer script {
   }
 }
 nav a.active {
-  color: #ff7f50; /* Set the color you want for the active navigation item */
+  color: #ff7f50; 
   font-weight: bold;
 }
 
@@ -138,18 +138,18 @@ ul li a {
 }
 
 ul li a::after {
-  content: '👉'; /* Add your preferred emoji or custom animation symbol here */
+  content: '👉'; 
   display: inline-block;
   opacity: 0;
-  margin-left: 5px; /* Adjust the spacing between the link and the emoji */
+  margin-left: 5px; 
   transition: opacity 0.3s, transform 0.3s;
 }
 
 ul li a:hover {
-  transform: translateX(5px); /* Adjust the distance the link moves on hover */
+  transform: translateX(5px);
 }
 
 ul li a:hover::after {
   opacity: 1;
-  transform: translateX(-5px); /* Adjust the distance the emoji moves on hover */
+  transform: translateX(-5px); 
 }
